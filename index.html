@@ -61,9 +61,37 @@ body {
   background: #eee;
 }
 
-.modal-content img {
+.modal-content {
+  position: relative;
+}
+
+#imagen-carrusel {
   width: 100%;
-  object-fit: contain;
+  max-height: 70vh;
+  object-fit: contain; /* 🔥 NO recorta */
+  background: #000;
+  border-radius: 10px;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.izquierda {
+  left: 10px;
+}
+
+.derecha {
+  right: 10px;
 }
 
 /* BOTÓN */
@@ -174,8 +202,15 @@ body {
 <!-- MODAL -->
 <div id="modal" class="modal">
   <div class="modal-content">
+    
     <span class="cerrar" onclick="cerrarModal()">&times;</span>
-    <div id="contenido-modal"></div>
+
+    <button class="nav izquierda" onclick="cambiarImagen(-1)">❮</button>
+    <button class="nav derecha" onclick="cambiarImagen(1)">❯</button>
+
+    <img id="imagen-carrusel" src="">
+    <p id="descripcion"></p>
+
   </div>
 </div>
 
@@ -185,47 +220,69 @@ body {
 </div>
 
 <script>
-// 👉 OPCIONAL: poner imagen de fondo
-// reemplaza 'tours/tuimagen.jpg'
-document.getElementById("hero").style.backgroundImage = "url('tours/tuimagen.jpg')";
+let imagenes = [];
+let indice = 0;
 
 function abrirModal(tipo) {
-  const contenido = document.getElementById("contenido-modal");
 
   if (tipo === "guatape") {
-    contenido.innerHTML = `
-      <h2>Tour Guatapé</h2>
-      <img src="tours/guatape (1).jpg">
-      <p>Visita la piedra del Peñol y pueblos coloridos.</p>
-      <img src="tours/guatape (2).jpg">
-    `;
+    imagenes = [
+      "tours/guatape (1).jpg",
+      "tours/guatape (2).jpg",
+      "tours/guatape (3).jpg",
+      "tours/guatape (4).jpg",
+      "tours/guatape (5).jpg",
+      "tours/guatape (6).jpg",
+      "tours/guatape (7).jpg"
+    ];
+    document.getElementById("descripcion").innerText = "Tour Guatapé - experiencia completa";
   }
 
   if (tipo === "ciudad") {
-    contenido.innerHTML = `
-      <h2>Tour Ciudad</h2>
-      <img src="tours/ciudad (1).jpg">
-      <p>Historia, cultura y transformación urbana.</p>
-      <img src="tours/ciudad (2).jpg">
-    `;
+    imagenes = [
+      "tours/ciudad (1).jpg",
+      "tours/ciudad (2).jpg",
+      "tours/ciudad (3).jpg",
+      "tours/ciudad (4).jpg",
+      "tours/ciudad (5).jpg",
+      "tours/ciudad (6).jpg",
+      "tours/ciudad (7).jpg"
+    ];
+    document.getElementById("descripcion").innerText = "Tour Ciudad - cultura y transformación";
   }
 
   if (tipo === "aventura") {
-    contenido.innerHTML = `
-      <h2>Tour Aventura</h2>
-      <img src="tours/aventura1.jpg">
-      <p>Experiencias extremas y adrenalina.</p>
-      <img src="tours/aventura2.jpg">
-    `;
+    imagenes = [
+      "tours/aventura1.jpg"
+    ];
+    document.getElementById("descripcion").innerText = "Tour Aventura - adrenalina total";
   }
 
+  indice = 0;
+  mostrarImagen();
+
   document.getElementById("modal").style.display = "block";
+}
+
+function mostrarImagen() {
+  document.getElementById("imagen-carrusel").src = imagenes[indice];
+}
+
+function cambiarImagen(direccion) {
+  indice += direccion;
+
+  if (indice < 0) {
+    indice = imagenes.length - 1;
+  }
+
+  if (indice >= imagenes.length) {
+    indice = 0;
+  }
+
+  mostrarImagen();
 }
 
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
 </script>
-
-</body>
-</html>
