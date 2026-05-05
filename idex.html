@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planes Turísticos</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f4f6f9;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background: #ff7a00;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* SECCIONES */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff7a00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Grupo Empresarial</h1>
+  <p>Experiencias, turismo y servicios que transforman vidas</p>
+  <a href="#" class="btn">Reservar Ahora</a>
+</section>
+
+<!-- EMPRESAS -->
+<section class="section">
+  <h2>Nuestras Empresas</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Empresa 1</h3>
+      <p>Descripción corta</p>
+      <a href="#">Ver más</a>
+    </div>
+    <div class="card">
+      <h3>Empresa 2</h3>
+      <p>Descripción corta</p>
+      <a href="#">Ver más</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="section" style="background:#fff;">
+  <h2>Portafolio</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Tours</h3>
+      <p>Experiencias únicas</p>
+    </div>
+    <div class="card">
+      <h3>Aventura</h3>
+      <p>Adrenalina pura</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section">
+  <h2>Contacto</h2>
+  <a href="#" class="btn">WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+  <p>© 2026 Grupo Empresarial</p>
+</div>
+
+</body>
+</html>
