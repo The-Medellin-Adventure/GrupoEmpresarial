@@ -27,11 +27,6 @@ body {
 
 .hero h1 {
   font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 18px;
 }
 
 /* SECCIONES */
@@ -58,6 +53,12 @@ body {
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -99,6 +100,40 @@ body {
   transform: scale(1.05);
 }
 
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background: white;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+.cerrar {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 /* FOOTER */
 .footer {
   background: #222;
@@ -117,7 +152,7 @@ body {
   <p>Experiencias, turismo y servicios en Medellín</p>
 </section>
 
-<!-- LOGOS EMPRESAS -->
+<!-- LOGOS -->
 <section class="section logos">
   <h2>Nuestras Empresas</h2>
   <img src="logos/aeroturex.png">
@@ -130,30 +165,26 @@ body {
   <h2>Portafolio de Tours</h2>
 
   <div class="cards">
-    <div class="card">
+
+    <div class="card" onclick="abrirModal('guatape')">
       <img src="tours/guatape.jpg">
       <h3>Tour Guatapé</h3>
       <p>Una experiencia imperdible llena de color y cultura.</p>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="abrirModal('ciudad')">
       <img src="tours/ciudad.jpg">
       <h3>Tour Ciudad</h3>
       <p>Descubre la historia y transformación de Medellín.</p>
     </div>
 
-    <div class="card">
+    <div class="card" onclick="abrirModal('aventura')">
       <img src="tours/aventura.jpg">
       <h3>Tour Aventura</h3>
       <p>Adrenalina, naturaleza y experiencias únicas.</p>
     </div>
-  </div>
-</section>
 
-<!-- SISTEMA DE RESERVAS -->
-<section class="section">
-  <h2>Sistema de Reservas</h2>
-  <a href="#" class="btn">Reservar ahora</a>
+  </div>
 </section>
 
 <!-- CONTACTO -->
@@ -162,10 +193,57 @@ body {
   <a href="#" class="btn">WhatsApp</a>
 </section>
 
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <div id="contenido-modal"></div>
+  </div>
+</div>
+
 <!-- FOOTER -->
 <div class="footer">
   <p>© 2026 Grupo Empresarial</p>
 </div>
+
+<script>
+function abrirModal(tipo) {
+  const contenido = document.getElementById("contenido-modal");
+
+  if (tipo === "guatape") {
+    contenido.innerHTML = `
+      <h2>Tour Guatapé</h2>
+      <img src="tours/guatape1.jpg">
+      <p>Visita la piedra del Peñol, recorridos en lancha y pueblos coloridos.</p>
+      <img src="tours/guatape2.jpg">
+    `;
+  }
+
+  if (tipo === "ciudad") {
+    contenido.innerHTML = `
+      <h2>Tour Ciudad</h2>
+      <img src="tours/ciudad1.jpg">
+      <p>Comuna 13, metro cable, historia y cultura urbana.</p>
+      <img src="tours/ciudad2.jpg">
+    `;
+  }
+
+  if (tipo === "aventura") {
+    contenido.innerHTML = `
+      <h2>Tour Aventura</h2>
+      <img src="tours/aventura1.jpg">
+      <p>Canopy, parapente y experiencias extremas.</p>
+      <img src="tours/aventura2.jpg">
+    `;
+  }
+
+  document.getElementById("modal").style.display = "block";
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
 
 </body>
 </html>
