@@ -133,6 +133,22 @@ body {
   font-size: 28px;
   cursor: pointer;
 }
+  .aliados-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.aliados-logos img {
+  width: 130px;
+  height: auto;
+  transition: 0.3s;
+}
+
+.aliados-logos img:hover {
+  transform: scale(1.08);
+}
 
 /* FOOTER */
 .footer {
@@ -192,7 +208,16 @@ body {
   <h2>Sistema de Reservas</h2>
   <a href="https://guatapetravel.rezdy.com/?agentCode=RESERVAS2" class="btn">Reservar ahora</a>
 </section>
+  
+<section class="section aliados">
+  <h2>Aliados Estratégicos</h2>
 
+  <div class="aliados-logos">
+    <img src="logos/aliado1.png">
+    <img src="logos/aliado2.png">
+    </div>
+</section>
+  
 <!-- CONTACTO -->
 <section class="section">
   <h2>Contacto</h2>
