@@ -229,13 +229,16 @@ body {
 <!-- MODAL -->
 <div id="modal" class="modal">
   <div class="modal-content">
-    
+
     <span class="cerrar" onclick="cerrarModal()">&times;</span>
 
-    <button class="nav izquierda" onclick="cambiarImagen(-1)">❮</button>
-    <button class="nav derecha" onclick="cambiarImagen(1)">❯</button>
+    <button class="nav izquierda" onclick="cambiarTour(-1)">❮</button>
+    <button class="nav derecha" onclick="cambiarTour(1)">❯</button>
+
+    <h2 id="titulo-tour"></h2>
 
     <img id="imagen-carrusel" src="">
+
     <p id="descripcion"></p>
 
   </div>
@@ -247,69 +250,171 @@ body {
 </div>
 
 <script>
-let imagenes = [];
-let indice = 0;
+
+let tours = [];
+let tourActual = 0;
 
 function abrirModal(tipo) {
 
+  // =========================
+  // TOURS GUATAPÉ
+  // =========================
   if (tipo === "guatape") {
-    imagenes = [
-      "tours/guatape (1).jpg",
-      "tours/guatape (2).jpg",
-      "tours/guatape (3).jpg",
-      "tours/guatape (4).jpg",
-      "tours/guatape (5).jpg",
-      "tours/guatape (6).jpg",
-      "tours/guatape (7).jpg"
+
+    tours = [
+
+      {
+        {
+  titulo: "Guatapé Full Day",
+
+  descripcion: `
+
+  <h3>📍 Destino</h3>
+  <p>Guatapé – Antioquia</p>
+
+  <h3>⏰ Duración</h3>
+  <p>10 horas</p>
+
+  <h3>🍽 Incluye</h3>
+
+  <p>
+  ✔ Transporte<br>
+  ✔ Desayuno<br>
+  ✔ Almuerzo<br>
+  ✔ Guía profesional<br>
+  ✔ Tour en lancha
+  </p>
+
+  <h3>🧭 Experiencia</h3>
+
+  <p>
+  Descubre los paisajes más icónicos de Antioquia mientras disfrutas de una experiencia inolvidable llena de cultura, color y aventura.
+  </p>
+
+  `,
+
+  imagen: "tours/guatape (1).jpg"
+},
+      },
+
+      {
+        titulo: "Guatapé Gastronómico",
+        descripcion: "Experiencia enfocada en gastronomía local y cultura paisa.",
+        imagen: "tours/guatape (2).jpg"
+      },
+
+      {
+        titulo: "Guatapé Premium",
+        descripcion: "Experiencia VIP privada con transporte exclusivo.",
+        imagen: "tours/guatape (3).jpg"
+      },
+
+      {
+        titulo: "Guatapé Relax",
+        descripcion: "Tour tranquilo para disfrutar paisajes y naturaleza.",
+        imagen: "tours/guatape (4).jpg"
+      }
+
     ];
-    document.getElementById("descripcion").innerText = "Tour Guatapé - experiencia completa";
   }
 
+  // =========================
+  // TOURS CIUDAD
+  // =========================
   if (tipo === "ciudad") {
-    imagenes = [
-      "tours/ciudad (1).jpg",
-      "tours/ciudad (2).jpg",
-      "tours/ciudad (3).jpg",
-      "tours/ciudad (4).jpg",
-      "tours/ciudad (5).jpg",
-      "tours/ciudad (6).jpg",
-      "tours/ciudad (7).jpg"
+
+    tours = [
+
+      {
+        titulo: "City Tour Medellín",
+        descripcion: "Conoce la transformación e historia de Medellín.",
+        imagen: "tours/ciudad (1).jpg"
+      },
+
+      {
+        titulo: "Comuna 13",
+        descripcion: "Arte urbano, cultura y graffiti.",
+        imagen: "tours/ciudad (2).jpg"
+      },
+
+      {
+        titulo: "Medellín Nocturno",
+        descripcion: "Experiencia nocturna y rooftops.",
+        imagen: "tours/ciudad (3).jpg"
+      },
+
+      {
+        titulo: "Pueblito Paisa",
+        descripcion: "Tradición y cultura antioqueña.",
+        imagen: "tours/ciudad (4).jpg"
+      }
+
     ];
-    document.getElementById("descripcion").innerText = "Tour Ciudad - cultura y transformación";
   }
 
+  // =========================
+  // TOURS AVENTURA
+  // =========================
   if (tipo === "aventura") {
-    imagenes = [
-      "tours/aventura1.jpg"
+
+    tours = [
+      {
+        titulo: "Parapente",
+        descripcion: "Vuela sobre montañas increíbles.",
+        imagen: "tours/aventura1.jpg"
+      },
+
+      {
+        titulo: "Canopy",
+        descripcion: "Adrenalina extrema en las alturas.",
+        imagen: "tours/aventura2.jpg"
+      },
+
+      {
+        titulo: "Cuatrimotos",
+        descripcion: "Recorridos extremos y aventura total.",
+        imagen: "tours/aventura3.jpg"
+      }
+
     ];
-    document.getElementById("descripcion").innerText = "Tour Aventura - adrenalina total";
   }
 
-  indice = 0;
-  mostrarImagen();
+  tourActual = 0;
+
+  mostrarTour();
 
   document.getElementById("modal").style.display = "block";
 }
 
-function mostrarImagen() {
-  document.getElementById("imagen-carrusel").src = imagenes[indice];
+function mostrarTour() {
+
+  document.getElementById("titulo-tour").innerText =
+    tours[tourActual].titulo;
+
+  document.getElementById("imagen-carrusel").src =
+    tours[tourActual].imagen;
+
+document.getElementById("descripcion").innerHTML =
+  tours[tourActual].descripcion;
 }
 
-function cambiarImagen(direccion) {
-  indice += direccion;
+function cambiarTour(direccion) {
 
-  if (indice < 0) {
-    indice = imagenes.length - 1;
+  tourActual += direccion;
+
+  if (tourActual < 0) {
+    tourActual = tours.length - 1;
   }
 
-  if (indice >= imagenes.length) {
-    indice = 0;
+  if (tourActual >= tours.length) {
+    tourActual = 0;
   }
 
-  mostrarImagen();
+  mostrarTour();
 }
 
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
+
 </script>
