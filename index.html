@@ -414,334 +414,206 @@ body {
 </div>
 
 <script>
+
 let tours = [];
 let tourActual = 0;
 function abrirModal(tipo) {
- // =========================
-// TOURS GUATAPÉ
-// =========================
+  // =========================
+  // TOURS GUATAPÉ
+  // =========================
+  if (tipo === "guatape") {
+    tours = [
+      {
+        titulo: "Guatapé Full Day",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Disfruta un recorrido completo por uno de los destinos más coloridos de Colombia.
+            Conoce la Piedra del Peñol, navega por la represa y recorre las calles de Guatapé.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días desde Parque El Poblado y sector La 70.</p>
+          <h3>⏰ Duración</h3>
+          <p>10 horas aproximadamente.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Transporte turístico<br>
+            ✔ Guía bilingüe<br>
+            ✔ Almuerzo típico<br>
+            ✔ Paseo en barco<br>
+            ✔ Recorrido por Guatapé
+          </p>
+        `,
 
-{
-  titulo: "Guatapé Full Day",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Disfruta un recorrido completo por uno de los destinos más coloridos de Colombia.
-    Conoce la Piedra del Peñol, navega por la represa y recorre las calles de Guatapé
-    mientras descubres su cultura, historia y arquitectura tradicional.
-  </p>
+        imagen: "tours/guatape (1).jpg"
+      },
 
-  <h3>📍 Salidas</h3>
-  <p>Todos los días desde Parque El Poblado y sector La 70.</p>
+      {
+        titulo: "Guatapé Gastronómico",
 
-  <h3>⏰ Duración</h3>
-  <p>10 horas aproximadamente.</p>
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Vive una experiencia enfocada en la gastronomía y tradición paisa.
+          </p>
 
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico compartido<br>
-    ✔ Guía profesional bilingüe<br>
-    ✔ Tarjeta de asistencia médica<br>
-    ✔ Visita a la Piedra del Peñol (subida opcional)<br>
-    ✔ Almuerzo típico antioqueño<br>
-    ✔ Paseo en barco por la represa<br>
-    ✔ Recorrido por el pueblo de Guatapé
-  </p>
-  `,
-  imagen: "tours/guatape (1).jpg"
-},
+          <h3>📍 Salidas</h3>
+          <p>Todos los días desde Parque El Poblado y sector La 70.</p>
 
-{
-  titulo: "Guatapé Gastronómico",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Vive una experiencia enfocada en la gastronomía y tradición paisa.
-    Disfruta degustaciones típicas, paisajes inolvidables y un recorrido cultural
-    por Guatapé y sus alrededores.
-  </p>
+          <h3>⏰ Duración</h3>
+          <p>10 horas aproximadamente.</p>
 
-  <h3>📍 Salidas</h3>
-  <p>Todos los días desde Parque El Poblado y sector La 70.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Degustaciones gastronómicas<br>
+            ✔ Paseo en barco<br>
+            ✔ Almuerzo típico
+          </p>
+        `,
 
-  <h3>⏰ Duración</h3>
-  <p>10 horas aproximadamente.</p>
+        imagen: "tours/guatape (2).jpg"
+      },
 
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico compartido<br>
-    ✔ Guía profesional bilingüe<br>
-    ✔ Tarjeta de asistencia médica<br>
-    ✔ 7 degustaciones gastronómicas<br>
-    ✔ Visita a granja de animales<br>
-    ✔ Visita a la Piedra del Peñol (subida opcional)<br>
-    ✔ Paseo en barco<br>
-    ✔ Almuerzo típico<br>
-    ✔ Recorrido por Guatapé
-  </p>
-  `,
-  imagen: "tours/guatape (2).jpg"
-},
+      {
+        titulo: "Guatapé + Helicóptero",
 
-{
-  titulo: "Guatapé + Vuelo en Helicóptero",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Descubre Guatapé desde el aire con un espectacular vuelo en helicóptero
-    sobre la represa. Vive una experiencia exclusiva combinando naturaleza,
-    aventura y paisajes únicos.
-  </p>
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Descubre Guatapé desde el aire con un espectacular vuelo en helicóptero.
+          </p>
 
-  <h3>📍 Salidas</h3>
-  <p>Todos los días desde Parque El Poblado y sector La 70.</p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
 
-  <h3>⏰ Duración</h3>
-  <p>10 horas aproximadamente.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Vuelo en helicóptero<br>
+            ✔ Guía bilingüe<br>
+            ✔ Transporte
+          </p>
+        `,
 
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico compartido<br>
-    ✔ Guía profesional bilingüe<br>
-    ✔ Tarjeta de asistencia médica<br>
-    ✔ Vuelo en helicóptero<br>
-    ✔ Snack<br>
-    ✔ Visita a la Piedra del Peñol (subida opcional)<br>
-    ✔ Tiempo libre en Guatapé
-  </p>
-  `,
-  imagen: "tours/guatape (3).jpg"
-},
+        imagen: "tours/guatape (3).jpg"
+      }
 
-{
-  titulo: "Guatapé + Wakeboard",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Vive la adrenalina del wakeboard en las aguas de la represa de Guatapé.
-    Un plan perfecto para quienes buscan aventura y actividades extremas
-    rodeadas de paisajes espectaculares.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días desde Parque El Poblado y sector La 70.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>10 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico compartido<br>
-    ✔ Guía profesional bilingüe<br>
-    ✔ Tarjeta de asistencia médica<br>
-    ✔ Actividad de wakeboard<br>
-    ✔ Snack<br>
-    ✔ Visita a Guatapé<br>
-    ✔ Tiempo libre para fotografías
-  </p>
-  `,
-  imagen: "tours/guatape (4).jpg"
-},
-
-// =========================
-// TOURS CIUDAD
-// =========================
-
-{
-  titulo: "City Tour Medellín",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Descubre la transformación social, cultural y arquitectónica de Medellín
-    recorriendo sus lugares más emblemáticos y sistemas de transporte innovadores.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días desde Parque El Poblado y sector La 70.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>4 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico compartido<br>
-    ✔ Guía profesional bilingüe<br>
-    ✔ Tarjeta de asistencia médica<br>
-    ✔ Snack<br>
-    ✔ Visita Plaza Botero<br>
-    ✔ Parque de los Pies Descalzos<br>
-    ✔ Viaje en Metro y Metrocable<br>
-    ✔ Visita Pueblito Paisa
-  </p>
-  `,
-  imagen: "tours/ciudad (1).jpg"
-},
-
-{
-  titulo: "Comuna 13",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Conoce la historia de transformación de la Comuna 13 a través del arte urbano,
-    el graffiti, la música y la cultura local en uno de los lugares más visitados de Medellín.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días desde Parque El Poblado y sector La 70.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>4 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico compartido<br>
-    ✔ Guía profesional bilingüe<br>
-    ✔ Tarjeta de asistencia médica<br>
-    ✔ Snack típico<br>
-    ✔ Recorrido por escaleras eléctricas<br>
-    ✔ Tour de graffiti y murales<br>
-    ✔ Show artístico local<br>
-    ✔ Miradores panorámicos
-  </p>
-  `,
-  imagen: "tours/ciudad (2).jpg"
-},
-
-{
-  titulo: "Medellín Nocturno",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Vive la energía nocturna de Medellín recorriendo zonas gastronómicas,
-    rooftops, miradores y lugares icónicos iluminados de la ciudad.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Noches programadas desde Parque El Poblado.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>4 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico<br>
-    ✔ Guía acompañante<br>
-    ✔ Visita a rooftops y miradores<br>
-    ✔ Recorrido panorámico nocturno<br>
-    ✔ Tiempo libre para fotografías
-  </p>
-  `,
-  imagen: "tours/ciudad (3).jpg"
-},
-
-{
-  titulo: "Pueblito Paisa",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Disfruta de un recorrido cultural por una réplica tradicional de un pueblo antioqueño,
-    ubicada en uno de los mejores miradores de Medellín.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>2 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico<br>
-    ✔ Guía acompañante<br>
-    ✔ Tiempo libre para compras y fotografías<br>
-    ✔ Visita al mirador Cerro Nutibara
-  </p>
-  `,
-  imagen: "tours/ciudad (4).jpg"
-},
-
-// =========================
-// TOURS AVENTURA
-// =========================
-
-{
-  titulo: "Parapente",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Vuela sobre las montañas antioqueñas y disfruta paisajes impresionantes
-    en una experiencia llena de adrenalina y emoción.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días según condiciones climáticas.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>4 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico<br>
-    ✔ Vuelo tándem con instructor certificado<br>
-    ✔ Equipos de seguridad<br>
-    ✔ Tarjeta de asistencia médica
-  </p>
-  `,
-  imagen: "tours/aventura1.jpg"
-},
-
-{
-  titulo: "Canopy",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Cruza grandes distancias en cables aéreos rodeado de naturaleza
-    y vive una experiencia extrema llena de adrenalina.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>5 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico<br>
-    ✔ Actividad canopy<br>
-    ✔ Equipos de seguridad<br>
-    ✔ Instructor especializado
-  </p>
-  `,
-  imagen: "tours/aventura2.jpg"
-},
-
-{
-  titulo: "Cuatrimotos",
-  descripcion: `
-  <h3>🧭 Experiencia</h3>
-  <p>
-    Recorre caminos rurales y senderos naturales conduciendo cuatrimotos
-    en una aventura extrema rodeada de paisajes increíbles.
-  </p>
-
-  <h3>📍 Salidas</h3>
-  <p>Todos los días con reserva previa.</p>
-
-  <h3>⏰ Duración</h3>
-  <p>3 horas aproximadamente.</p>
-
-  <h3>🍽 Incluye</h3>
-  <p>
-    ✔ Transporte turístico<br>
-    ✔ Alquiler de cuatrimoto<br>
-    ✔ Equipos de seguridad<br>
-    ✔ Instructor acompañante
-  </p>
-  `,
-  imagen: "tours/aventura3.jpg"
-}
     ];
+
+  }
+
+  // =========================
+  // TOURS CIUDAD
+  // =========================
+
+  if (tipo === "ciudad") {
+
+    tours = [
+
+      {
+        titulo: "City Tour Medellín",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Descubre la transformación social y cultural de Medellín.
+          </p>
+
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Metro y Metrocable<br>
+            ✔ Plaza Botero<br>
+            ✔ Pueblito Paisa
+          </p>
+        `,
+
+        imagen: "tours/ciudad (1).jpg"
+      },
+
+      {
+        titulo: "Comuna 13",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Arte urbano, graffiti y cultura local.
+          </p>
+
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Escaleras eléctricas<br>
+            ✔ Show artístico<br>
+            ✔ Miradores
+          </p>
+        `,
+
+        imagen: "tours/ciudad (2).jpg"
+      }
+
+    ];
+
+  }
+
+  // =========================
+  // TOURS AVENTURA
+  // =========================
+
+  if (tipo === "aventura") {
+
+    tours = [
+
+      {
+        titulo: "Parapente",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Vuela sobre las montañas antioqueñas.
+          </p>
+
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Instructor certificado<br>
+            ✔ Equipos de seguridad
+          </p>
+        `,
+
+        imagen: "tours/aventura1.jpg"
+      },
+
+      {
+        titulo: "Canopy",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Vive adrenalina extrema en las alturas.
+          </p>
+        `,
+
+        imagen: "tours/aventura2.jpg"
+      },
+
+      {
+        titulo: "Cuatrimotos",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Recorre senderos naturales en cuatrimoto.
+          </p>
+        `,
+
+        imagen: "tours/aventura3.jpg"
+      }
+
+    ];
+
   }
 
   tourActual = 0;
@@ -759,8 +631,8 @@ function mostrarTour() {
   document.getElementById("imagen-carrusel").src =
     tours[tourActual].imagen;
 
-document.getElementById("descripcion").innerHTML =
-  tours[tourActual].descripcion;
+  document.getElementById("descripcion").innerHTML =
+    tours[tourActual].descripcion;
 }
 
 function cambiarTour(direccion) {
@@ -781,5 +653,17 @@ function cambiarTour(direccion) {
 function cerrarModal() {
   document.getElementById("modal").style.display = "none";
 }
+
+// CERRAR MODAL AL DAR CLICK AFUERA
+
+window.onclick = function(event) {
+
+  const modal = document.getElementById("modal");
+
+  if (event.target === modal) {
+    cerrarModal();
+  }
+
+};
 
 </script>
