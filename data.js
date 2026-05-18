@@ -251,9 +251,34 @@ TrolleyandChivas:[
         `,
         imagen: "tours/cuatrib.jpeg"
       }
-    ]
-
-
-
-  
+    ],
+  privados:[
+    {
+     titulo: "Experiencias a u propio ritmo",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+           <p>Descubre Medellín y Antioquia con recorridos privados, horarios flexibles y experiencias hechas a tu medida.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Previamente programas.</p>
+          <h3>Nuestro tours</h3>
+          <p>
+            ✔ Guatapé en todas sus modalidades<br>
+            ✔ Tours de ciudad: <br>
+               - City Tour <br>
+               - Comuna 13 <br>
+               - Transformación después de Pablo Escobar<br>
+               - Tour de miradores<br>
+               - Tour de compras<br>
+               - Santa Fé de Antioquia<br>
+               - Vuelta a Oriente<br>
+               - Jardín, Antioquia<br>
+            ✔ Tour nocturnos<br>
+            ✔ Tour de aventura<br>
+            ✔ Recoridos en Chiva Rumbera o Trolley<br>
+          </p>
+        `,
+        imagen: "tours/city.jpeg"
+      },
+],
 }
