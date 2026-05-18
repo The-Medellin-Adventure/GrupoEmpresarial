@@ -123,8 +123,11 @@ body{
 
 .card img{
   width:100%;
-  height:220px;
-  object-fit:cover;
+  height:240px;
+  object-fit:contain;
+  background:#f5f5f5
+  padding:10px;
+  box-sizing:border-box;
 }
 
 .card-info{
@@ -166,9 +169,12 @@ body{
 
 #imagen-carrusel{
   width:100%;
-  max-height:400px;
-  object-fit:cover;
+  max-height:500px;
+  object-fit:contain;
+  background:#f5f5f5;
+  padding:10px;
   border-radius:20px;
+  box-sizing:border-box;
 }
 
 #descripcion{
