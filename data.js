@@ -155,9 +155,47 @@ const toursData = {
           </p>
         `,
         imagen: "tours/ciudad (2).jpg"
-      },
+      }
   ],
-
+Trolley and Chivas:[
+{
+        titulo: "Gastrochiva- Tour Rumbero",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Disfruta de una experiencia gastronómica cautivadora a bordo de una chiva llena de luces y música.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ 3 degustaciones gastronómicas<br>
+            ✔ Rumba Crossover<br>
+            ✔ 1 cerveza
+          </p>
+        `,
+        imagen: "tours/aventura1.jpg"
+      },
+      {
+        titulo: "Party Bus",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+          Visita las principales zonas de la ciudad a bordo de un Party Bus temático y disfruta de DJ en vivo y toda la cerveza que puedas tomar
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Cerveza ilimitada<br>
+            ✔ DJ abordo con animadoras<br>
+            ✔ Recorrido por zonas rosa de Medellín<br>
+          </p>
+        `,
+        imagen: "tours/aventura1.jpg"
+      }
+    ],
+ 
   aventura:[
     {
       titulo:"Tour Aventura",
