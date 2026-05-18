@@ -21,7 +21,7 @@ const toursData = {
             ✔ Recorrido por Guatapé
           </p>
         `,
-        imagen: "tours/guatape (1).jpg"
+        imagen: "tours/full.jpg"
       },
       {
         titulo: "Guatapé Gastronómico",
@@ -41,7 +41,7 @@ const toursData = {
             ✔ Almuerzo típico
           </p>
         `,
-        imagen: "tours/guatape (2).jpg"
+        imagen: "tours/guata.jpg"
       },
       {
         titulo: "Guatapé Avenura",
@@ -63,7 +63,7 @@ const toursData = {
             ✔ Visita al pueblo de Guatapé<br>
           </p>
         `,
-        imagen: "tours/guatape (3).jpg"
+        imagen: "tours/avntura.jpg"
       },
       {
         titulo: "Guatapé + Helicóptero",
@@ -84,7 +84,7 @@ const toursData = {
             ✔ Visita el pueblo de Guatapé<br>
           </p>
         `,
-        imagen: "tours/guatape (3).jpg"
+        imagen: "tours/heli2.jpg"
       },   
   ],
 
@@ -131,7 +131,7 @@ const toursData = {
             ✔ Museo del café<br>
           </p>
         `,
-        imagen: "tours/ciudad (2).jpg"
+        imagen: "tours/comuna.jpg"
       },
       {
         titulo: "Transformación después de Pablo Escobar",
@@ -161,9 +161,7 @@ TrolleyandChivas:[
         titulo: "Gastrochiva- Tour Rumbero",
         descripcion: `
           <h3>🧭 Experiencia</h3>
-          <p>
-            Disfruta de una experiencia gastronómica cautivadora a bordo de una chiva llena de luces y música.
-          </p>
+          <p>Disfruta de una experiencia gastronómica cautivadora a bordo de una chiva llena de luces y música.</p>
           <h3>📍 Salidas</h3>
           <p>Todos los días.</p>
           <h3>🍽 Incluye</h3>
@@ -173,7 +171,7 @@ TrolleyandChivas:[
             ✔ 1 cerveza
           </p>
         `,
-        imagen: "tours/aventura1.jpg"
+        imagen: "tours/gastrochiva.jpg"
       },
       {
         titulo: "Party Bus",
@@ -191,7 +189,7 @@ TrolleyandChivas:[
             ✔ Recorrido por zonas rosa de Medellín<br>
           </p>
         `,
-        imagen: "tours/aventura1.jpg"
+        imagen: "tours/party.jpg"
       }
     ],
  
@@ -214,7 +212,7 @@ TrolleyandChivas:[
             ✔ Almuerzo montañero<br>
           </p>
         `,
-        imagen: "tours/aventura1.jpg"
+        imagen: "tours/cafe.jpg"
       },
       {
         titulo: "Parapente",
