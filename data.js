@@ -1,5 +1,4 @@
 const toursData = {
-
   guatape:[
     {
       titulo: "Guatapé Full Day",
@@ -198,8 +197,7 @@ Trolley and Chivas:[
  
   aventura:[
     {
-     {
-        titulo: "Café Tour- Llegada a caballo",
+     titulo: "Café Tour- Llegada a caballo",
         descripcion: `
           <h3>🧭 Experiencia</h3>
            <p>
@@ -235,7 +233,6 @@ Trolley and Chivas:[
 
         imagen: "tours/aventura1.jpg"
       },
-
       {
         titulo: "Canopy",
 
@@ -248,7 +245,6 @@ Trolley and Chivas:[
 
         imagen: "tours/aventura2.jpg"
       },
-
       {
         titulo: "Cuatrimotos",
 
@@ -261,8 +257,5 @@ Trolley and Chivas:[
 
         imagen: "tours/aventura3.jpg"
       }
-
-    ];
-  ]
-
-};
+    ]
+}
