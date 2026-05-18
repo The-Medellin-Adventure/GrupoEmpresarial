@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Medellín Adventure</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+
+  <h1>The Medellín Adventure</h1>
+
+  <p>
+    Experiencias auténticas, tours privados y recorridos compartidos
+    para descubrir Medellín, Guatapé y Antioquia.
+  </p>
+
+  <a href="#tours" class="btn">
+    Explorar Tours
+  </a>
+
+</section>
+
+<!-- EMPRESAS -->
+<section class="section logos">
+
+  <h2>Nuestras Empresas</h2>
+
+  <div class="logos-container">
+
+    <div class="logo-card">
+
+      <img src="logos/aeroturex.png" alt="">
+
+      <h3>Aeroturex Medellín</h3>
+
+      <p class="empresa-texto">
+        Experiencias de ciudad, cultura, historia y gastronomía
+        mostrando la transformación y esencia de Medellín.
+      </p>
+
+      <div class="redes">
+        <a href="https://www.aeroturex.com/" target="_blank">Web</a>
+        <a href="https://www.instagram.com/aeroturex_medellin/" target="_blank">Instagram</a>
+      </div>
+
+    </div>
+
+    <div class="logo-card">
+
+      <img src="logos/guatape-travel.png" alt="">
+
+      <h3>Guatapé Travel</h3>
+
+      <p class="empresa-texto">
+        Recorridos diseñados para disfrutar la cultura, los paisajes
+        y la magia del municipio más colorido de Antioquia.
+      </p>
+
+      <div class="redes">
+        <a href="https://guatape.travel/" target="_blank">Web</a>
+        <a href="https://www.instagram.com/guatape.travel/" target="_blank">Instagram</a>
+      </div>
+
+    </div>
+
+    <div class="logo-card">
+
+      <img src="logos/turtle-bus.png" alt="">
+
+      <h3>Turtle Bus</h3>
+
+      <p class="empresa-texto">
+        Naturaleza, adrenalina y experiencias pensadas para viajeros
+        que buscan aventura y momentos inolvidables.
+      </p>
+
+      <div class="redes">
+        <a href="https://www.instagram.com/turtlebusmedellin/" target="_blank">Instagram</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TOURS COMPARTIDOS -->
+<section class="section" id="tours">
+
+  <h2>Tours Compartidos</h2>
+
+  <p class="subtitulo">
+    Experiencias grupales ideales para conocer personas
+    y descubrir Medellín al mejor precio.
+  </p>
+
+  <div class="cards">
+
+    <div class="card" onclick="abrirModal('guatape')">
+
+      <img src="tours/guatape.jpg">
+
+      <div class="card-info">
+
+        <h3>Tour Guatapé</h3>
+
+        <p>
+          Descubre uno de los destinos más coloridos de Colombia.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="card" onclick="abrirModal('ciudad')">
+
+      <img src="tours/ciudad.jpg">
+
+      <div class="card-info">
+
+        <h3>Tour Ciudad</h3>
+
+        <p>
+          Historia, cultura y transformación social de Medellín.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TOURS PRIVADOS -->
+<section class="section privados">
+
+  <h2>Tours Privados</h2>
+
+  <p class="subtitulo">
+    Experiencias exclusivas con atención personalizada
+    y horarios flexibles.
+  </p>
+
+  <div class="cards">
+
+    <div class="card" onclick="abrirModal('aventura')">
+
+      <img src="tours/aventura.jpg">
+
+      <div class="card-info">
+
+        <h3>Tour Aventura</h3>
+
+        <p>
+          Actividades de naturaleza, adrenalina y experiencias únicas.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- RESERVAS -->
+<section class="section">
+
+  <h2>Sistema de Reservas</h2>
+
+  <a href="https://guatapetravel.rezdy.com/?agentCode=RESERVAS2"
+     class="btn"
+     target="_blank">
+
+    Reservar Ahora
+
+  </a>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+
+  <div class="modal-content">
+
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+
+    <button class="nav izquierda" onclick="cambiarTour(-1)">❮</button>
+    <button class="nav derecha" onclick="cambiarTour(1)">❯</button>
+
+    <h2 id="titulo-tour"></h2>
+
+    <img id="imagen-carrusel" src="">
+
+    <div id="descripcion"></div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <h3>The Medellín Adventure</h3>
+
+  <p>Turismo • Cultura • Gastronomía • Naturaleza</p>
+
+  <p>© 2026 Todos los derechos reservados</p>
+
+</footer>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
