@@ -229,7 +229,7 @@ TrolleyandChivas:[
             ✔ Seguro de asistencia médica<br>
           </p>
         `,
-        imagen: "tours/tibetano.jpg"
+        imagen: "tours/tibetano.png"
       },
       {
         titulo: "Parapente",
@@ -252,4 +252,8 @@ TrolleyandChivas:[
         imagen: "tours/cuatrib.jpeg"
       }
     ]
+
+
+
+  
 }
