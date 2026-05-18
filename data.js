@@ -158,7 +158,7 @@ const toursData = {
       }
   ],
 Trolley and Chivas:[
-{
+        {
         titulo: "Gastrochiva- Tour Rumbero",
         descripcion: `
           <h3>🧭 Experiencia</h3>
@@ -202,7 +202,6 @@ Trolley and Chivas:[
       imagen:"tours/aventura.jpg",
       descripcion:`
         <h3>Experiencia</h3>
-
         <p>
           Naturaleza, adrenalina y experiencias inolvidables.
         </p>
