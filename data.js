@@ -198,23 +198,71 @@ Trolley and Chivas:[
  
   aventura:[
     {
-      titulo:"Tour Aventura",
-      imagen:"tours/aventura.jpg",
-      descripcion:`
-        <h3>Experiencia</h3>
-        <p>
-          Naturaleza, adrenalina y experiencias inolvidables.
-        </p>
+     {
+        titulo: "Café Tour- Llegada a caballo",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+           <p>
+            Recorre plantaciones, aprende sobre la cosecha y sumérgeteen la cultura cafetera.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Transporte turistico<br>
+            ✔ Historia y cultura del café colombiano<br>
+            ✔ Ruta ecológica<br>
+            ✔ Bebidad típica<br>
+            ✔ Almuerzo montañero<br>
+          </p>
+        `,
+        imagen: "tours/aventura1.jpg"
+      },
+      {
+        titulo: "Parapente",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Vuela sobre las montañas antioqueñas.
+          </p>
 
-        <h3>Incluye</h3>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Instructor certificado<br>
+            ✔ Equipos de seguridad
+          </p>
+        `,
 
-        <p>
-          ✔ Actividades extremas<br>
-          ✔ Transporte<br>
-          ✔ Guía
-        </p>
-      `
-    }
+        imagen: "tours/aventura1.jpg"
+      },
+
+      {
+        titulo: "Canopy",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Vive adrenalina extrema en las alturas.
+          </p>
+        `,
+
+        imagen: "tours/aventura2.jpg"
+      },
+
+      {
+        titulo: "Cuatrimotos",
+
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Recorre senderos naturales en cuatrimoto.
+          </p>
+        `,
+
+        imagen: "tours/aventura3.jpg"
+      }
+
+    ];
   ]
 
 };
