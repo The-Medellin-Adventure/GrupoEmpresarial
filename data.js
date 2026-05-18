@@ -108,7 +108,7 @@ const toursData = {
             ✔ Pueblito Paisa
           </p>
         `,
-        imagen: "tours/ciudad (1).jpg"
+        imagen: "tours/city.jpeg"
       },
       {
         titulo: "Comuna 13",
@@ -153,7 +153,7 @@ const toursData = {
             ✔ Visita Museo Privado (entrada opcional)<br>
           </p>
         `,
-        imagen: "tours/ciudad (2).jpg"
+        imagen: "tours/pablo.jpg"
       }
   ],
 TrolleyandChivas:[
@@ -215,33 +215,30 @@ TrolleyandChivas:[
         imagen: "tours/cafe.jpg"
       },
       {
-        titulo: "Parapente",
+        titulo: "Aventura extrema",
         descripcion: `
           <h3>🧭 Experiencia</h3>
-          <p>
-            Vuela sobre las montañas antioqueñas.
-          </p>
-
+          <p>Vive una experiencia diseñada para quienes buscan adrenalina real y conexión con la naturaleza en su máxima expresión.</p>
           <h3>🍽 Incluye</h3>
           <p>
+            ✔ Transporte ida y regreso en vehículo temático<br>
             ✔ Instructor certificado<br>
-            ✔ Equipos de seguridad
+            ✔ Equipos de seguridad<br>
+            ✔ Pasarela Tibetana<br>
+            ✔ 3 Tirolesas (50, 200 y 250 metros)<br>
+            ✔ Seguro de asistencia médica<br>
           </p>
         `,
-
-        imagen: "tours/aventura1.jpg"
+        imagen: "tours/tibetano.jpg"
       },
       {
-        titulo: "Canopy",
+        titulo: "Parapente",
 
         descripcion: `
           <h3>🧭 Experiencia</h3>
-          <p>
-            Vive adrenalina extrema en las alturas.
-          </p>
+          <p>Vive adrenalina extrema en las alturas.</p>
         `,
-
-        imagen: "tours/aventura2.jpg"
+        imagen: "tours/parapente.jpg"
       },
       {
         titulo: "Cuatrimotos",
@@ -252,7 +249,7 @@ TrolleyandChivas:[
             Recorre senderos naturales en cuatrimoto.
           </p>
         `,
-        imagen: "tours/aventura3.jpg"
+        imagen: "tours/cuatrib.jpeg"
       }
     ]
 }
