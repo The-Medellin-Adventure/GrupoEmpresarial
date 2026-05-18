@@ -91,24 +91,71 @@ const toursData = {
 
   ciudad:[
     {
-      titulo:"City Tour Medellín",
-      imagen:"tours/ciudad.jpg",
-      descripcion:`
-        <h3>Experiencia</h3>
-
-        <p>
-          Conoce la transformación social y cultural de Medellín.
-        </p>
-
-        <h3>Incluye</h3>
-
-        <p>
-          ✔ Metro y Metrocable<br>
-          ✔ Plaza Botero<br>
-          ✔ Guía bilingüe
-        </p>
-      `
-    }
+      titulo: "City Tour Medellín",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Descubre la transformación social y cultural de Medellín.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Transporte en chiva<br>
+            ✔ Guia bilingüe<br>
+            ✔ Metro y Metrocable<br>
+            ✔ Plaza Botero<br>
+            ✔ Parque de los Pies Descalzos<br>
+            ✔ Pueblito Paisa
+          </p>
+        `,
+        imagen: "tours/ciudad (1).jpg"
+      },
+      {
+        titulo: "Comuna 13",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Arte urbano, graffiti y cultura local.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Transporte en chiva<br>
+            ✔ Guia bilingüe<br>
+            ✔ Snack Paleta de mango biche<br>
+            ✔ Explicación histora y murales<br>
+            ✔ Escaleras eléctricas<br>
+            ✔ Show artístico- Show de baile o trova antiqueña<br>
+            ✔ Miradores<br>
+            ✔ Museo del café<br>
+          </p>
+        `,
+        imagen: "tours/ciudad (2).jpg"
+      },
+      {
+        titulo: "Transformación después de Pablo Escobar",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+            Explora la historia, la resiliencia y la evolución de la ciudad después de una época diferencia.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días.</p>
+          <h3>🍽 Incluye</h3>
+          <p>
+            ✔ Transporte turístico<br>
+            ✔ Guia bilingüe<br>
+            ✔ Visita Rosa Mística<br>
+            ✔ Visita Barrio PAblo Escobar en Envigado<br>
+            ✔ Visita tumba de personajes como Pablo Escobar y Griselda Blanco<br>
+            ✔ Visita Parque de la Inflexión<br>
+            ✔ Visita Museo Privado (entrada opcional)<br>
+          </p>
+        `,
+        imagen: "tours/ciudad (2).jpg"
+      },
   ],
 
   aventura:[
