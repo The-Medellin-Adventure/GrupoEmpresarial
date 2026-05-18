@@ -252,15 +252,16 @@ TrolleyandChivas:[
         imagen: "tours/cuatrib.jpeg"
       }
     ],
+ 
   privados:[
     {
-     titulo: "Experiencias a u propio ritmo",
+     titulo: "Experiencias a tu propio ritmo",
         descripcion: `
           <h3>🧭 Experiencia</h3>
            <p>Descubre Medellín y Antioquia con recorridos privados, horarios flexibles y experiencias hechas a tu medida.
           </p>
           <h3>📍 Salidas</h3>
-          <p>Previamente programas.</p>
+          <p>Todos los días. Previamente programas.</p>
           <h3>Nuestro tours</h3>
           <p>
             ✔ Guatapé en todas sus modalidades<br>
