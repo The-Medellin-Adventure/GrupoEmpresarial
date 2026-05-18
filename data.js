@@ -156,7 +156,7 @@ const toursData = {
         imagen: "tours/ciudad (2).jpg"
       }
   ],
-Trolley and Chivas:[
+TrolleyandChivas:[
         {
         titulo: "Gastrochiva- Tour Rumbero",
         descripcion: `
@@ -254,7 +254,6 @@ Trolley and Chivas:[
             Recorre senderos naturales en cuatrimoto.
           </p>
         `,
-
         imagen: "tours/aventura3.jpg"
       }
     ]
