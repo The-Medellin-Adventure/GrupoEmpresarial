@@ -16,6 +16,8 @@ const toursData = {
           <p>
             ✔ Transporte turístico<br>
             ✔ Guía bilingüe<br>
+            ✔ Visita granja de animales<br>
+            ✔ Visita Piedra del Peñol (subida opcional)<br>
             ✔ Almuerzo típico<br>
             ✔ Paseo en barco<br>
             ✔ Recorrido por Guatapé
@@ -36,20 +38,27 @@ const toursData = {
           <p>10 horas aproximadamente.</p>
           <h3>🍽 Incluye</h3>
           <p>
-            ✔ Degustaciones gastronómicas<br>
+           ✔ Transporte turístico<br>
+            ✔ Guía bilingüe<br>
+            ✔ 7 expereiencias gastronómicas<br>
             ✔ Paseo en barco<br>
-            ✔ Almuerzo típico
-          </p>
+            ✔ Almuerzo típico en la represa<br>
+            ✔ Visita granaja de animales<br>
+            ✔ Visita Piedra del Peñol (subida opcional)<br>
+            ✔ Tour por el pueblo de Guatapé<br>
+            </p>
         `,
         imagen: "tours/guata.jpg"
       },
       {
-        titulo: "Guatapé Avenura",
+        titulo: "Guatapé Aventura",
         descripcion: `
           <h3>🧭 Experiencia</h3>
           <p>Descubre Guatapé y la historia de la Hacienda La Manuela, propiedad que era de Pablo Escobar en Guatapé.</p>
           <h3>📍 Salidas</h3>
-          <p>Todos los días.</p>
+          <p>Todos los días desde Parque El Poblado y sector La 70.</p>
+          <h3>⏰ Duración</h3>
+          <p>10 horas aproximadamente.</p>
           <h3>🍽 Incluye</h3>
           <p>
             ✔ Transporte turístico<br>
@@ -73,7 +82,7 @@ const toursData = {
             Descubre Guatapé desde el aire con un espectacular vuelo en helicóptero.
           </p>
           <h3>📍 Salidas</h3>
-          <p>Todos los días.</p>
+          <p>Todos los días desde Parque El Poblado y sector La 70</p>
           <h3>🍽 Incluye</h3>
           <p>
             ✔ Guía bilingüe<br>
