@@ -210,7 +210,7 @@ TrolleyandChivas:[
           <h3>📍 Salidas</h3>
           <p>Todos los días. Duración de 2 a 3.5 horas aprox.</p>
         `,
-        imagen: "tours/party.jpg"
+        imagen: "tours/trolley.png"
       }
     ],
  
