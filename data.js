@@ -199,6 +199,18 @@ TrolleyandChivas:[
           </p>
         `,
         imagen: "tours/party.jpg"
+      },
+  {
+    titulo: "Salidas compartidas o privadas",
+        descripcion: `
+          <h3>🧭 Experiencia</h3>
+          <p>
+          Disfruta de un recorrido en un tranvía clásico o de la experiencia festiva de las tradicionales chivas colombianas, en un paseo panorámico por los principales atractivos de la ciudad, música a bordo.
+          </p>
+          <h3>📍 Salidas</h3>
+          <p>Todos los días. Duración de 2 a 3.5 horas aprox.</p>
+        `,
+        imagen: "tours/party.jpg"
       }
     ],
  
