@@ -246,7 +246,8 @@ TrolleyandChivas:[
             ✔ Instructor certificado<br>
             ✔ Equipos de seguridad<br>
             ✔ Pasarela Tibetana<br>
-            ✔ 3 Tirolesas (50, 200 y 250 metros)<br>
+            ✔ 1 Tirolesa<br>
+            Actividades adicionales como parapente, senderismo, torrentismo
             ✔ Seguro de asistencia médica<br>
           </p>
         `,
