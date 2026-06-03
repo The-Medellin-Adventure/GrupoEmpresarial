@@ -223,6 +223,32 @@ body{
   padding:40px 20px;
 }
 
+/* =========================
+   CARRUSEL VEHÍCULOS
+========================= */
+
+.vehiculos-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 15px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.vehiculos-carousel img {
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
 @media(max-width:768px){
 
   .hero h1{
@@ -238,21 +264,12 @@ body{
     width:100%;
     max-width:340px;
   }
-  .vehiculos-carousel {
-  display: flex;
-  gap: 10px;
-  overflow-x: auto;
-  padding: 10px 0;
-  scroll-snap-type: x mandatory;
-}
 
-.vehiculos-carousel img {
-  width: 220px;
-  height: 140px;
-  object-fit: cover;
-  border-radius: 14px;
-  flex: 0 0 auto;
-  scroll-snap-align: center;
-},
+  .vehiculos-carousel img {
+    width:180px;
+    height:120px;
+  }
+
+}
 
 }
