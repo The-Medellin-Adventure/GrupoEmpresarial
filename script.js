@@ -51,3 +51,27 @@ window.onclick = function(event){
     cerrarModal();
   }
 }
+
+
+/* =========================
+   AMPLIAR FOTOS VEHÍCULOS
+========================= */
+
+document.addEventListener("click", function(e){
+
+  if(e.target.closest(".vehiculos-carousel img")){
+
+    document.getElementById("fotoGrande").src = e.target.src;
+
+    document.getElementById("lightbox").style.display = "flex";
+
+  }
+
+
+  if(e.target.id === "lightbox"){
+
+    document.getElementById("lightbox").style.display = "none";
+
+  }
+
+});
