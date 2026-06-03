@@ -223,9 +223,10 @@ TrolleyandChivas:[
     <h3>🚎 Nuestros vehículos</h3>
     <div class="vehiculos-carousel">
       <img src="tours/trolley.png" alt="Trolley Medellín">
-      <img src="tours/chiva1.jpg" alt="Chiva turística">
-      <img src="tours/chiva2.jpg" alt="Chiva rumbera">
-      <img src="tours/bus.jpg" alt="Vehículo turístico">
+      <img src="tours/Vehiculos (4).jpg" alt="Chiva turística">
+      <img src="tours/Vehiculos (1).jpg" alt="Chiva rumbera">
+      <img src="tours/Vehiculos (5).jpg" alt="Vehículo turístico">
+      <img src="tours/vehiculo.jpg" alt="Vehículo Aventura">
     </div>
   `,
   imagen: "tours/trolley.png"
