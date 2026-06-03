@@ -220,9 +220,10 @@ TrolleyandChivas:[
           Vive Medellín de una forma diferente a bordo de nuestros vehículos temáticos. Disfruta recorridos llenos de historia, música, cultura y diversión en ambientes únicos como trolley clásicos, chivas tradicionales y experiencias móviles diseñadas para crear recuerdos inolvidables mientras descubres la ciudad.
           </p>
         `,
-        imagen: "tours/trolley.png",
-        imagen: "tours/trolley.png",
-        imagen: "tours/trolley.png"
+     <img src="tours/trolley.png" alt="Trolley Medellín">,
+      <img src="tours/chiva1.jpg" alt="Chiva turística">,
+      <img src="tours/chiva2.jpg" alt="Chiva rumbera">,
+      <img src="tours/bus.jpg" alt="Vehículo turístico">,
       }
     ],
  
