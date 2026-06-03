@@ -238,5 +238,21 @@ body{
     width:100%;
     max-width:340px;
   }
+  .vehiculos-carousel {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.vehiculos-carousel img {
+  width: 220px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
 
 }
