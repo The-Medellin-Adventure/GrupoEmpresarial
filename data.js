@@ -227,7 +227,7 @@ TrolleyandChivas:[
       <img src="tours/Vehiculos1.jpg" alt="Chiva rumbera">
       <img src="tours/Vehiculos5.jpg" alt="Vehículo turístico">
       <img src="tours/vehiculo.jpg" alt="Vehículo Aventura">
-      <img src="tours/vehiculo.jpg" alt="Party-Bus">
+      <img src="tours/party.jpg" alt="Party-Bus">
     </div>
   `,
   imagen: "tours/trolley.png"
