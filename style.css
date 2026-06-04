@@ -311,5 +311,40 @@ body{
     opacity:1;
   }
 }
+/* VISOR FOTO GRANDE */
 
+.visor-foto{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.88);
+  z-index:99999;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.visor-foto img{
+  max-width:95%;
+  max-height:90vh;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+.cerrar-visor{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:42px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:100000;
+}
+
+.vehiculos-carousel img{
+  cursor:pointer;
+}
 }
