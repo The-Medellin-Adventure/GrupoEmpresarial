@@ -73,5 +73,25 @@ document.addEventListener("click", function(e){
     document.getElementById("lightbox").style.display = "none";
 
   }
+/* AMPLIAR FOTO DEL CARRUSEL */
 
+document.addEventListener("click", function(e){
+
+  if(e.target.matches(".vehiculos-carousel img")){
+
+    document.getElementById("fotoGrande").src = e.target.src;
+    document.getElementById("visorFoto").style.display = "flex";
+
+  }
+
+  if(e.target.id === "visorFoto"){
+    cerrarFotoGrande();
+  }
+
+});
+
+function cerrarFotoGrande(){
+  document.getElementById("visorFoto").style.display = "none";
+  document.getElementById("fotoGrande").src = "";
+}
 });
