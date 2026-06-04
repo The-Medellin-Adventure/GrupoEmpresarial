@@ -228,6 +228,7 @@ TrolleyandChivas:[
       <img src="tours/Vehiculos5.jpg" alt="Vehículo turístico">
       <img src="tours/vehiculo.jpg" alt="Vehículo Aventura">
       <img src="tours/party.jpg" alt="Party-Bus">
+      <img src="tours/turbus.jpeg" alt="Turtle Bus">
     </div>
   `,
   imagen: "tours/trolley.png"
