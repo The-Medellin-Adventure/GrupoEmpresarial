@@ -380,7 +380,7 @@ body{
 }
 
 .hero::before{
-  content:"IDENTIDAD DE MARCA";
+  content:"GROUP";
   display:block;
   color:rgba(13,27,61,.62);
   font-size:12px;
