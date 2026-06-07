@@ -1,0 +1,644 @@
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#f5f7fb;
+  color:#222;
+  scroll-behavior:smooth;
+}
+
+.hero{
+  background:
+    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.65)),
+    url('img/banner.jpg');
+  background-size:cover;
+  background-position:center;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+}
+
+.hero h1{
+  font-size:60px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  line-height:1.8;
+  font-size:20px;
+}
+
+.section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+.section h2{
+  font-size:38px;
+}
+
+.subtitulo{
+  max-width:700px;
+  margin:auto;
+  color:#666;
+  line-height:1.8;
+}
+
+.btn{
+  background:#ff7a00;
+  color:white;
+  padding:14px 28px;
+  border-radius:40px;
+  text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
+  font-weight:600;
+}
+
+.btn:hover{
+  background:#111;
+}
+
+.logos-container,
+.cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:25px;
+  margin-top:40px;
+}
+
+.logo-card,
+.card{
+  background:white;
+  border-radius:22px;
+  overflow:hidden;
+  width:300px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+  transition:.35s;
+}
+
+.logo-card:hover,
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 20px 45px rgba(0,0,0,.16);
+}
+
+.logo-card{
+  padding:25px;
+}
+
+.logo-card img{
+  width:150px;
+  height:90px;
+  object-fit:contain;
+}
+
+.logo-card h3{
+  margin-top:20px;
+}
+
+.empresa-texto{
+  color:#666;
+  line-height:1.7;
+  font-size:14px;
+}
+
+.redes{
+  display:flex;
+  justify-content:center;
+  gap:10px;
+  margin-top:20px;
+}
+
+.redes a{
+  background:#ff7a00;
+  color:white;
+  padding:8px 15px;
+  border-radius:30px;
+  text-decoration:none;
+  font-size:13px;
+}
+
+.card img{
+  width:100%;
+  height:240px;
+  object-fit:contain;
+  background:#f5f5f5;
+  padding:12px;
+  box-sizing:border-box;
+  border-radius:18px;
+}
+
+.card-info{
+  padding:20px;
+  text-align:left;
+}
+
+.card-info p{
+  color:#666;
+  line-height:1.6;
+}
+
+.privados{
+  background:white;
+}
+
+.modal{
+  display:none;
+  position:fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,.8);
+  z-index:999;
+}
+
+.modal-content{
+  background:white;
+  width:92%;
+  max-width:850px;
+  margin:3vh auto;
+  padding:30px;
+  border-radius:24px;
+  max-height:90vh;
+  overflow-y:auto;
+  position:relative;
+}
+
+#imagen-carrusel{
+  width:100%;
+  max-height:500px;
+  object-fit:contain;
+  background:#f5f5f5;
+  padding:10px;
+  border-radius:20px;
+  box-sizing:border-box;
+}
+
+#descripcion{
+  line-height:1.8;
+  margin-top:20px;
+}
+
+#descripcion h3{
+  color:#ff7a00;
+}
+
+.cerrar{
+  position:absolute;
+  right:25px;
+  top:15px;
+  font-size:30px;
+  cursor:pointer;
+}
+
+.nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  border:none;
+  background:rgba(0,0,0,.6);
+  color:white;
+  font-size:28px;
+  border-radius:50%;
+  padding:10px 16px;
+  cursor:pointer;
+}
+
+.izquierda{
+  left:15px;
+}
+
+.derecha{
+  right:15px;
+}
+
+.footer{
+  background:#111;
+  color:white;
+  text-align:center;
+  padding:40px 20px;
+}
+
+/* =========================
+   CARRUSEL VEHÍCULOS
+========================= */
+
+.vehiculos-carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding: 15px 0;
+  scroll-snap-type: x mandatory;
+}
+
+.vehiculos-carousel img {
+  width: 230px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 16px;
+  flex: 0 0 auto;
+  scroll-snap-align: center;
+}
+
+
+/* =========================
+   RESPONSIVE CELULAR
+========================= */
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .card,
+  .logo-card{
+    width:100%;
+    max-width:340px;
+  }
+
+  .vehiculos-carousel img {
+    width:180px;
+    height:120px;
+  }
+  /* =========================
+   VISOR PREMIUM DE FOTOS
+========================= */
+
+.vehiculos-carousel img{
+  cursor:pointer;
+  transition:.3s;
+}
+
+.vehiculos-carousel img:hover{
+  transform:scale(1.05);
+}
+
+.lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+}
+
+.lightbox img{
+  max-width:90%;
+  max-height:85vh;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,.6);
+  animation:zoomFoto .3s ease;
+}
+
+@keyframes zoomFoto{
+  from{
+    transform:scale(.7);
+    opacity:0;
+  }
+
+  to{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+/* VISOR FOTO GRANDE */
+
+.visor-foto{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.88);
+  z-index:99999;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.visor-foto img{
+  max-width:95%;
+  max-height:90vh;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+
+.cerrar-visor{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:42px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:100000;
+}
+
+.vehiculos-carousel img{
+  cursor:pointer;
+}
+}
+
+
+/* =========================================================
+   BRANDING MEDELLÍN TRIP PLANNER + MODAL CORPORATIVO
+   Cambios visuales seguros: no alteran la lógica de tours.
+========================================================= */
+:root{
+  --mtp-azul:#0D1B3D;
+  --mtp-azul-suave:#ABC8E6;
+  --mtp-verde:#2BB7A6;
+  --mtp-ambar:#FFC97A;
+  --mtp-niebla:#F1F3F6;
+  --mtp-texto:#23304D;
+}
+
+body{
+  background:linear-gradient(180deg,#ffffff 0%,#f5f8fc 48%,#ffffff 100%);
+  color:var(--mtp-texto);
+}
+
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 80% 15%, rgba(43,183,166,.25), transparent 28%),
+    radial-gradient(circle at 15% 25%, rgba(171,200,230,.35), transparent 28%),
+    linear-gradient(135deg, #ffffff 0%, #eef6fb 52%, #ffffff 100%);
+  color:var(--mtp-azul);
+  padding:125px 20px 110px;
+}
+
+.hero::before{
+  content:"IDENTIDAD DE MARCA";
+  display:block;
+  color:rgba(13,27,61,.62);
+  font-size:12px;
+  letter-spacing:4px;
+  font-weight:700;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  max-width:900px;
+  margin:0 auto 15px;
+  line-height:.95;
+  letter-spacing:1px;
+  color:var(--mtp-azul);
+}
+
+.hero h1::after{
+  content:"";
+  display:block;
+  width:74px;
+  height:4px;
+  margin:22px auto 0;
+  border-radius:20px;
+  background:linear-gradient(90deg,var(--mtp-verde),var(--mtp-ambar));
+}
+
+.hero p{
+  color:#52617f;
+  font-weight:300;
+}
+
+.btn,
+.redes a{
+  background:linear-gradient(135deg,var(--mtp-azul),#102d67);
+  box-shadow:0 12px 28px rgba(13,27,61,.18);
+  border:0;
+}
+
+.btn:hover,
+.redes a:hover{
+  background:linear-gradient(135deg,var(--mtp-verde),#159b8c);
+}
+
+.section h2{
+  color:var(--mtp-azul);
+  letter-spacing:.2px;
+}
+
+.section h2::after{
+  content:"";
+  display:block;
+  width:58px;
+  height:3px;
+  margin:12px auto 0;
+  border-radius:30px;
+  background:var(--mtp-ambar);
+}
+
+.logo-card,
+.card,
+.modal-content{
+  border:1px solid rgba(13,27,61,.08);
+  box-shadow:0 18px 46px rgba(13,27,61,.10);
+}
+
+.logo-card h3,
+.card-info h3,
+#titulo-tour{
+  color:var(--mtp-azul);
+}
+
+/* Modal corporativo */
+.modal-corporativo{
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:100000;
+  background:rgba(13,27,61,.72);
+  backdrop-filter:blur(8px);
+  padding:24px;
+  box-sizing:border-box;
+  overflow:auto;
+}
+
+.modal-corporativo.activo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.corporativo-card{
+  width:min(1120px,100%);
+  max-height:92vh;
+  overflow:auto;
+  position:relative;
+  background:linear-gradient(180deg,#ffffff 0%,#f7fbff 100%);
+  border-radius:30px;
+  padding:36px;
+  box-shadow:0 35px 90px rgba(0,0,0,.32);
+  color:var(--mtp-texto);
+}
+
+.corporativo-card::before{
+  content:"";
+  position:absolute;
+  right:-90px;
+  top:-90px;
+  width:260px;
+  height:260px;
+  background:radial-gradient(circle,rgba(43,183,166,.25),transparent 68%);
+  pointer-events:none;
+}
+
+.cerrar-corporativo{
+  position:sticky;
+  top:0;
+  float:right;
+  width:44px;
+  height:44px;
+  border:0;
+  border-radius:50%;
+  background:var(--mtp-azul);
+  color:white;
+  font-size:30px;
+  line-height:1;
+  cursor:pointer;
+  z-index:2;
+}
+
+.corp-header{
+  text-align:left;
+  max-width:760px;
+  margin-bottom:22px;
+}
+
+.corp-etiqueta{
+  display:inline-block;
+  color:var(--mtp-azul);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+
+.corp-header h2{
+  margin:0;
+  font-size:clamp(38px,6vw,72px);
+  line-height:.95;
+  color:var(--mtp-azul);
+}
+
+.corp-header h2 span{
+  color:var(--mtp-verde);
+}
+
+.corp-header p,
+.corp-intro p{
+  color:#52617f;
+  line-height:1.8;
+  font-size:17px;
+}
+
+.corp-intro{
+  background:white;
+  border-left:5px solid var(--mtp-ambar);
+  padding:18px 22px;
+  border-radius:18px;
+  margin:18px 0 26px;
+  box-shadow:0 12px 30px rgba(13,27,61,.07);
+}
+
+.corp-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.corp-brand{
+  background:white;
+  border:1px solid rgba(13,27,61,.08);
+  border-radius:22px;
+  padding:20px;
+  box-shadow:0 12px 28px rgba(13,27,61,.08);
+}
+
+.corp-brand img{
+  width:120px;
+  height:76px;
+  object-fit:contain;
+  display:block;
+  margin-bottom:12px;
+}
+
+.corp-brand h3{
+  color:var(--mtp-azul);
+  margin:8px 0;
+  font-size:18px;
+}
+
+.corp-brand p{
+  color:#5c6984;
+  font-size:14px;
+  line-height:1.65;
+}
+
+.corp-valores{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
+  margin-top:24px;
+}
+
+.corp-valores div{
+  background:linear-gradient(135deg,#eef7fb,#ffffff);
+  border-radius:18px;
+  padding:18px;
+  border:1px solid rgba(43,183,166,.18);
+}
+
+.corp-valores strong{
+  display:block;
+  color:var(--mtp-azul);
+  margin-bottom:6px;
+}
+
+.corp-valores span{
+  color:#61708c;
+  font-size:14px;
+}
+
+.corp-cierre{
+  text-align:center;
+  margin-top:26px;
+  padding-top:22px;
+  border-top:1px solid rgba(13,27,61,.10);
+}
+
+.corp-cierre h3{
+  color:var(--mtp-azul);
+  font-size:22px;
+}
+
+@media(max-width:900px){
+  .corp-grid,
+  .corp-valores{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:600px){
+  .corporativo-card{
+    padding:24px 18px;
+    border-radius:22px;
+  }
+
+  .corp-grid,
+  .corp-valores{
+    grid-template-columns:1fr;
+  }
+}
