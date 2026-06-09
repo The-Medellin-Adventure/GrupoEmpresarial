@@ -1114,17 +1114,70 @@ padding:20px;
   background:linear-gradient(180deg, var(--mtp-dorado), var(--mtp-verde-2), var(--mtp-verde));
 }
 
+/* ==============================
+   ESENCIA DE MARCA INDIVIDUAL PREMIUM CLEAN
+============================== */
 .empresa-modal-descripcion{
   grid-column:1 / -1;
   background:
-    radial-gradient(circle at top right, rgba(242,184,75,.24), transparent 34%),
-    linear-gradient(135deg, rgba(14,64,55,.96), rgba(31,143,106,.94));
-  color:#ffffff;
+    radial-gradient(circle at top right,
+    rgba(242,184,75,.18),
+    transparent 35%),
+    linear-gradient(
+    135deg,
+    #ffffff,
+    #f6fbf8
+    );
+  border:
+  1px solid rgba(14,64,55,.12);
+  border-radius:26px;
+  box-shadow:
+  0 16px 38px rgba(13,27,61,.08);
+  color:#0d1b3d;
 }
 
-.empresa-modal-descripcion .empresa-mini-title,
+/* barra elegante lateral */
+.empresa-modal-descripcion::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:22px;
+  width:6px;
+  height:calc(100% - 44px);
+  border-radius:0 12px 12px 0;
+  background:
+  linear-gradient(
+  180deg,
+  #0e4037,
+  #1f8f6a,
+  #f2b84b
+  );
+}
+
+/* titulo esencia */
+.empresa-modal-descripcion .empresa-mini-title{
+  display:inline-flex;
+  align-items:center;
+  background:
+  rgba(31,143,106,.10);
+  border:
+  1px solid rgba(31,143,106,.18);
+  color:#0e4037;
+  padding:
+  8px 16px;
+  border-radius:
+  999px;
+  font-weight:950;
+  letter-spacing:
+  2px;
+}
+
+/* texto */
 .empresa-modal-descripcion p{
-  color:#ffffff;
+  color:#33443f;
+  font-size:16px;
+  line-height:1.8;
+  font-weight:500;
 }
 
 .empresa-mini-title{
