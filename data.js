@@ -212,28 +212,32 @@ TrolleyandChivas:[
         `,
         imagen: "tours/trolley.png"
       },
-  {
-  titulo: "Nuestros Vehículos",
+{
+  titulo: "Nuestros vehículos temáticos",
   descripcion: `
     <h3>🧭 Experiencia</h3>
     <p>
-      Vive Medellín de una forma diferente a bordo de nuestros vehículos temáticos. Disfruta recorridos llenos de historia, música, cultura y diversión en ambientes únicos como trolley clásicos, chivas tradicionales y experiencias móviles diseñadas para crear recuerdos inolvidables mientras descubres la ciudad.
+      Vive Medellín de una forma diferente a bordo de nuestros vehículos temáticos. 
+      Disfruta recorridos llenos de historia, música, cultura y diversión en ambientes únicos 
+      como trolley clásicos, chivas tradicionales y experiencias móviles diseñadas para crear 
+      recuerdos inolvidables mientras descubres la ciudad.
     </p>
-
-    <h3>🚎 Nuestros vehículos</h3>
+    <h3 class="titulo-vehiculos">
+      🚎 Nuestros vehículos temáticos
+    </h3>
     <div class="vehiculos-carousel">
       <img src="tours/trolley.png" alt="Trolley Medellín">
       <img src="tours/coqueta.jpg" alt="Chiva turística">
       <img src="tours/Vehiculos1.jpg" alt="Chiva rumbera">
       <img src="tours/Vehiculos5.jpg" alt="Vehículo turístico">
       <img src="tours/vehiculo.jpg" alt="Vehículo Aventura">
-      <img src="tours/party.jpg" alt="Party-Bus">
+      <img src="tours/party.jpg" alt="Party Bus">
       <img src="tours/turbus.jpeg" alt="Turtle Bus">
     </div>
   `,
   imagen: "tours/trolley.png"
-}
-  ],
+  }
+    ],
  
   aventura:[
     {
