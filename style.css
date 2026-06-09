@@ -269,86 +269,6 @@ body{
     width:180px;
     height:120px;
   }
-  /* =========================
-   VISOR PREMIUM DE FOTOS
-========================= */
-
-.vehiculos-carousel img{
-  cursor:pointer;
-  transition:.3s;
-}
-
-.vehiculos-carousel img:hover{
-  transform:scale(1.05);
-}
-
-.lightbox{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.85);
-  z-index:9999;
-  justify-content:center;
-  align-items:center;
-}
-
-.lightbox img{
-  max-width:90%;
-  max-height:85vh;
-  border-radius:20px;
-  box-shadow:0 20px 50px rgba(0,0,0,.6);
-  animation:zoomFoto .3s ease;
-}
-
-@keyframes zoomFoto{
-  from{
-    transform:scale(.7);
-    opacity:0;
-  }
-
-  to{
-    transform:scale(1);
-    opacity:1;
-  }
-}
-/* VISOR FOTO GRANDE */
-
-.visor-foto{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,.88);
-  z-index:99999;
-  align-items:center;
-  justify-content:center;
-  padding:20px;
-  box-sizing:border-box;
-}
-
-.visor-foto img{
-  max-width:95%;
-  max-height:90vh;
-  object-fit:contain;
-  border-radius:18px;
-  box-shadow:0 20px 60px rgba(0,0,0,.7);
-}
-
-.cerrar-visor{
-  position:absolute;
-  top:20px;
-  right:30px;
-  color:white;
-  font-size:42px;
-  font-weight:bold;
-  cursor:pointer;
-  z-index:100000;
-}
-
-.vehiculos-carousel img{
-  cursor:pointer;
-}
-}
-
 /* ==============================
    BRANDING MEDELLÍN TRIP PLANNER
    Modal corporativo + diseño premium
@@ -1273,4 +1193,65 @@ padding:20px;
   .empresa-modal-logo-wrap{
     min-height:130px;
   }
+}
+/* =========================
+   TÍTULO VEHÍCULOS
+========================= */
+.titulo-vehiculos{
+  text-align:center;
+  color:#0e4037 !important;
+  font-size:26px;
+  margin:28px 0 16px;
+  font-weight:900;
+}
+
+.titulo-vehiculos::after{
+  content:"";
+  display:block;
+  width:80px;
+  height:4px;
+  background:#f2b84b;
+  margin:10px auto 0;
+  border-radius:20px;
+}
+/* =========================
+   VISOR FOTO GRANDE
+========================= */
+.visor-foto{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.88);
+  z-index:999999;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.visor-foto img{
+  max-width:95%;
+  max-height:90vh;
+  object-fit:contain;
+  border-radius:18px;
+  box-shadow:0 20px 60px rgba(0,0,0,.7);
+}
+.cerrar-visor{
+  position:absolute;
+  top:20px;
+  right:30px;
+  color:white;
+  font-size:45px;
+  font-weight:bold;
+  cursor:pointer;
+  z-index:1000000;
+}
+
+.vehiculos-carousel img{
+  cursor:pointer;
+  transition:.3s;
+}
+
+.vehiculos-carousel img:hover{
+  transform:scale(1.05);
 }
