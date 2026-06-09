@@ -51,37 +51,19 @@ window.onclick = function(event){
     cerrarModal();
   }
 }
-
-
 /* =========================
-   AMPLIAR FOTOS VEHÍCULOS
+   AMPLIAR FOTO DEL CARRUSEL
 ========================= */
 
 document.addEventListener("click", function(e){
 
-  if(e.target.closest(".vehiculos-carousel img")){
+  const imagenVehiculo = e.target.closest(".vehiculos-carousel img");
 
-    document.getElementById("fotoGrande").src = e.target.src;
-
-    document.getElementById("lightbox").style.display = "flex";
-
-  }
-
-
-  if(e.target.id === "lightbox"){
-
-    document.getElementById("lightbox").style.display = "none";
-
-  }
-/* AMPLIAR FOTO DEL CARRUSEL */
-
-document.addEventListener("click", function(e){
-
-  if(e.target.matches(".vehiculos-carousel img")){
-
-    document.getElementById("fotoGrande").src = e.target.src;
+  if(imagenVehiculo){
+    e.stopPropagation();
+    document.getElementById("fotoGrande").src = imagenVehiculo.src;
     document.getElementById("visorFoto").style.display = "flex";
-
+    return;
   }
 
   if(e.target.id === "visorFoto"){
@@ -94,9 +76,6 @@ function cerrarFotoGrande(){
   document.getElementById("visorFoto").style.display = "none";
   document.getElementById("fotoGrande").src = "";
 }
-});
-
-
 /* =========================
    PRESENTACIÓN CORPORATIVA
 ========================= */
